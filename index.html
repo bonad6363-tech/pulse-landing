@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pulse — ясный план для вашего следующего шага</title>
+  <meta name="description" content="Экспертный разбор: разбираем задачу, структуру и возможности, чтобы вы точно знали, что делать дальше." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=laptopShadow1" />
+  <link rel="stylesheet" href="css/mobile.css?v=laptopShadow1" />
+</head>
+<body>
+  <div class="page-grid" aria-hidden="true"></div>
+
+  <header class="header">
+    <a class="logo" href="#top">Pulse</a>
+    <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+    <label class="burger" for="nav-toggle" aria-label="Открыть меню">
+      <span></span>
+    </label>
+    <nav class="nav" aria-label="Навигация">
+      <a href="#who">Кому</a>
+      <a href="#how">Как работает</a>
+      <a href="#inside">Формат</a>
+      <a href="#situations">Ситуации</a>
+      <a class="nav-cta" href="#book">Записаться</a>
+    </nav>
+    <a class="btn btn-primary btn-sm header-cta" href="https://t.me/NadezdaBoriskina" target="_blank" rel="noopener">Записаться</a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="brand-hero">Pulse</p>
+          <h1>Запись на разбор<br />без лишних переписок</h1>
+          <p class="hero-lead">
+            Мини-сервис для экспертов: одна страница, понятный оффер и заявка за две минуты.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://t.me/NadezdaBoriskina" target="_blank" rel="noopener">
+              Записаться на разбор
+            </a>
+            <a class="btn btn-ghost" href="#how">Как это работает</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Путь клиента: Запрос, Разбор, Решение, План">
+          <div class="flow-stage">
+            <div class="pulse-base" aria-hidden="true">
+              <span class="orb orb-a"></span>
+              <span class="orb orb-b"></span>
+              <span class="pulse-ring"></span>
+              <span class="pulse-ring pulse-ring--delay"></span>
+            </div>
+
+            <div class="flow-grid" aria-hidden="true"></div>
+            <div class="flow-rings" aria-hidden="true"></div>
+
+            <span class="deco deco-1" aria-hidden="true"></span>
+            <span class="deco deco-2" aria-hidden="true"></span>
+            <span class="deco deco-3" aria-hidden="true"></span>
+            <span class="deco deco-4" aria-hidden="true"></span>
+            <span class="deco deco-5" aria-hidden="true"></span>
+            <span class="deco deco-6" aria-hidden="true"></span>
+            <span class="deco deco-7" aria-hidden="true"></span>
+
+            <svg class="flow-line" viewBox="0 0 720 420" fill="none" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <linearGradient id="flowGrad" x1="40" y1="320" x2="680" y2="70" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#27C7A5"/>
+                  <stop offset="0.48" stop-color="#F3B63F"/>
+                  <stop offset="1" stop-color="#FF6846"/>
+                </linearGradient>
+                <filter id="nodeGlow" x="-100%" y="-100%" width="300%" height="300%">
+                  <feGaussianBlur stdDeviation="4.5" result="b"/>
+                  <feMerge>
+                    <feMergeNode in="b"/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+              </defs>
+              <path
+                d="M48 336 C 130 336, 170 118, 268 118 S 390 318, 468 318 S 580 96, 678 86"
+                stroke="url(#flowGrad)"
+                stroke-width="4.2"
+                stroke-linecap="round"
+              />
+              <g filter="url(#nodeGlow)">
+                <circle cx="48" cy="336" r="16.5" fill="#27C7A5"/>
+                <circle cx="48" cy="336" r="6" fill="#FFFFFF"/>
+                <circle cx="268" cy="118" r="16.5" fill="#F5B73B"/>
+                <circle cx="268" cy="118" r="6" fill="#FFFFFF"/>
+                <circle cx="468" cy="318" r="16.5" fill="#FF6846"/>
+                <circle cx="468" cy="318" r="6" fill="#FFFFFF"/>
+                <circle cx="678" cy="86" r="18" fill="#FF6A3D"/>
+                <circle cx="678" cy="86" r="6.5" fill="#FFFFFF"/>
+              </g>
+            </svg>
+
+            <article class="flow-card flow-card--1">
+              <span class="flow-icon flow-icon--mint" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 6h11a3 3 0 013 3v5a3 3 0 01-3 3H10l-4 3v-3H5a2 2 0 01-2-2V8a2 2 0 012-2z" stroke="currentColor" stroke-width="1.7"/></svg>
+              </span>
+              <div>
+                <h3>Запрос</h3>
+                <p>Вы оставляете заявку</p>
+              </div>
+            </article>
+
+            <article class="flow-card flow-card--2">
+              <span class="flow-icon flow-icon--sun" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.7"/><path d="M16 16l4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <h3>Разбор</h3>
+                <p>Анализируем вашу задачу</p>
+              </div>
+            </article>
+
+            <article class="flow-card flow-card--3">
+              <span class="flow-icon flow-icon--coral" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M7 3h7l5 5v13H7V3z" stroke="currentColor" stroke-width="1.7"/><path d="M14 3v5h5M10 12h6M10 16h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <h3>Решение</h3>
+                <p>Предлагаем варианты</p>
+              </div>
+            </article>
+
+            <article class="flow-card flow-card--4">
+              <span class="flow-icon flow-icon--orange" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="7.5" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.7"/></svg>
+              </span>
+              <div>
+                <h3>План</h3>
+                <p>Вы получаете понятный план</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--who" id="who">
+      <div class="section-head who-head" data-reveal>
+        <p class="eyebrow who-eyebrow">Для кого</p>
+        <h2>Кому подходит <span class="brand-word">Pulse</span></h2>
+        <p class="section-lead who-lead">Если вы продаёте экспертизу, а не товар с витрины.</p>
+      </div>
+
+      <div class="who-layout">
+        <div class="who-cards">
+          <article class="who-card who-card--mint" data-reveal>
+            <span class="who-num">01</span>
+            <div class="who-card-visual" aria-hidden="true">
+              <img src="images/who-expert-3d.png" alt="" width="220" height="165" loading="lazy" decoding="async">
+            </div>
+            <h3>Экспертам</h3>
+            <p>Коучи, консультанты, наставники — нужен простой вход в запись, а не длинные воронки.</p>
+            <ul class="mini-checks">
+              <li>Упаковка оффера</li>
+              <li>Структура презентации</li>
+              <li>Сценарий консультации</li>
+            </ul>
+          </article>
+
+          <article class="who-card who-card--sun" data-reveal>
+            <span class="who-num">02</span>
+            <div class="who-card-visual" aria-hidden="true">
+              <img src="images/who-creator-3d.png" alt="" width="220" height="165" loading="lazy" decoding="async">
+            </div>
+            <h3>Креаторам</h3>
+            <p>Разборы, эфиры, мини-продукты — страница, которая ведёт к одному действию.</p>
+            <ul class="mini-checks">
+              <li>Идеи форматов</li>
+              <li>Простая структура страницы</li>
+              <li>Тексты и визуал под вашу тему</li>
+            </ul>
+          </article>
+
+          <article class="who-card who-card--coral" data-reveal>
+            <span class="who-num">03</span>
+            <div class="who-card-visual" aria-hidden="true">
+              <img src="images/who-digital-3d.png" alt="" width="220" height="165" loading="lazy" decoding="async">
+            </div>
+            <h3>Digital-проектам</h3>
+            <p>Запуск услуги или пилота без сложной воронки и десятка экранов.</p>
+            <ul class="mini-checks">
+              <li>Чёткий сценарий запуска</li>
+              <li>Страница под задачу</li>
+              <li>Рекомендации по трафику</li>
+            </ul>
+          </article>
+        </div>
+
+        <aside class="who-deco" data-reveal>
+          <span class="who-deco-orb who-deco-orb--peach" aria-hidden="true"></span>
+          <span class="who-deco-orb who-deco-orb--mint" aria-hidden="true"></span>
+
+          <div class="who-process">
+            <p class="who-process-eyebrow">Процесс Pulse</p>
+            <h3 class="who-process-title">От идеи к плану</h3>
+
+            <ol class="who-process-steps">
+              <li class="who-process-step who-process-step--idea">
+                <span class="who-process-node" aria-hidden="true"></span>
+                <div class="who-process-card">
+                  <span class="who-process-num">01</span>
+                  <div>
+                    <p class="who-process-name">Идея</p>
+                    <p class="who-process-hint">Точка входа</p>
+                  </div>
+                </div>
+              </li>
+              <li class="who-process-step who-process-step--analysis">
+                <span class="who-process-node" aria-hidden="true"></span>
+                <div class="who-process-card">
+                  <span class="who-process-num">02</span>
+                  <div>
+                    <p class="who-process-name">Анализ</p>
+                    <p class="who-process-hint">Разбор задачи</p>
+                  </div>
+                </div>
+              </li>
+              <li class="who-process-step who-process-step--structure">
+                <span class="who-process-node" aria-hidden="true"></span>
+                <div class="who-process-card">
+                  <span class="who-process-num">03</span>
+                  <div>
+                    <p class="who-process-name">Структура</p>
+                    <p class="who-process-hint">Сборка блоков</p>
+                  </div>
+                </div>
+              </li>
+              <li class="who-process-step who-process-step--plan">
+                <span class="who-process-node" aria-hidden="true"></span>
+                <div class="who-process-card">
+                  <span class="who-process-num">04</span>
+                  <div>
+                    <p class="who-process-name">План действий</p>
+                    <p class="who-process-hint">Следующий шаг</p>
+                  </div>
+                </div>
+              </li>
+            </ol>
+
+            <svg class="who-process-link" viewBox="0 0 24 280" fill="none" aria-hidden="true" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="whoProcessGrad" x1="12" y1="8" x2="12" y2="272" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#27C7A5"/>
+                  <stop offset="0.38" stop-color="#F5B73B"/>
+                  <stop offset="0.68" stop-color="#FF8A4C"/>
+                  <stop offset="1" stop-color="#FF6846"/>
+                </linearGradient>
+              </defs>
+              <path
+                d="M12 10 C 12 50, 6 80, 12 110 C 18 140, 12 170, 12 200 C 12 230, 8 250, 12 270"
+                stroke="url(#whoProcessGrad)"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                opacity="0.85"
+              />
+            </svg>
+
+            <div class="who-process-ui who-process-ui--a" aria-hidden="true">
+              <span class="who-process-ui-bar"></span>
+              <span class="who-process-ui-bar who-process-ui-bar--mid"></span>
+              <span class="who-process-ui-bar who-process-ui-bar--short"></span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--how" id="how">
+      <div class="how-layout">
+        <div class="how-copy">
+          <div class="how-head" data-reveal>
+            <p class="eyebrow how-eyebrow">Процесс</p>
+            <h2>Как это работает</h2>
+            <p class="section-lead how-lead">Три шага — от интереса до ясного плана действий.</p>
+          </div>
+
+          <ol class="steps">
+            <li data-reveal>
+              <span class="step-num step-num--1">1</span>
+              <div>
+                <h3>Открываете страницу</h3>
+                <p>Сразу видно, что за разбор, для кого он и какой результат.</p>
+              </div>
+            </li>
+            <li data-reveal>
+              <span class="step-num step-num--2">2</span>
+              <div>
+                <h3>Выбираете формат</h3>
+                <p>Короткий созвон, письменный разбор или мини-сессия — без лишних вопросов.</p>
+              </div>
+            </li>
+            <li data-reveal>
+              <span class="step-num step-num--3">3</span>
+              <div>
+                <h3>Оставляете заявку</h3>
+                <p>Имя, контакт и тема. Эксперт отвечает в Telegram — без переписки «в никуда».</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="how-stage" aria-hidden="true" data-reveal>
+          <span class="how-stage-orb how-stage-orb--mint"></span>
+          <span class="how-stage-orb how-stage-orb--peach"></span>
+          <span class="how-stage-grid"></span>
+          <span class="how-stage-ring"></span>
+          <span class="how-pulse-ring"></span>
+          <span class="how-pulse-ring how-pulse-ring--delay"></span>
+
+          <div class="how-plant">
+            <span class="how-plant-leaf how-plant-leaf--a"></span>
+            <span class="how-plant-leaf how-plant-leaf--b"></span>
+            <span class="how-plant-leaf how-plant-leaf--c"></span>
+            <span class="how-plant-pot"></span>
+          </div>
+
+          <div class="how-laptop">
+            <div class="how-laptop-body">
+              <div class="how-laptop-lid">
+                <div class="how-laptop-bezel">
+                  <div class="how-laptop-camera"></div>
+                  <div class="how-laptop-screen">
+                    <div class="how-laptop-chrome" aria-hidden="true">
+                      <span class="how-dot-win how-dot-win--coral"></span>
+                      <span class="how-dot-win how-dot-win--sun"></span>
+                      <span class="how-dot-win how-dot-win--mint"></span>
+                    </div>
+                    <ul class="how-checklist">
+                      <li><span class="how-check how-check--mint"></span><span class="how-bar"></span></li>
+                      <li><span class="how-check how-check--sun"></span><span class="how-bar how-bar--mid"></span></li>
+                      <li><span class="how-check how-check--coral"></span><span class="how-bar how-bar--short"></span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="how-laptop-hinge"></div>
+              <div class="how-laptop-deck">
+                <div class="how-laptop-deck-face">
+                  <div class="how-laptop-keys" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                    <span></span><span></span><span></span><span></span><span class="how-key--wide"></span><span></span><span></span><span></span><span></span>
+                  </div>
+                  <div class="how-laptop-track"></div>
+                </div>
+                <div class="how-laptop-front"></div>
+                <div class="how-laptop-side how-laptop-side--right" aria-hidden="true"></div>
+                <div class="how-laptop-side how-laptop-side--left" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="how-laptop-shadow"></div>
+          </div>
+
+          <svg class="how-pulse-line" viewBox="0 0 600 460" fill="none" preserveAspectRatio="xMidYMid meet">
+            <defs>
+              <linearGradient id="howPulseGrad" x1="348" y1="22" x2="460" y2="385" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#27C7A5"/>
+                <stop offset="0.48" stop-color="#F5B73B"/>
+                <stop offset="1" stop-color="#FF6846"/>
+              </linearGradient>
+              <filter id="howNodeGlow" x="-140%" y="-140%" width="380%" height="380%">
+                <feGaussianBlur stdDeviation="4.5" result="b"/>
+                <feMerge><feMergeNode in="b"/></feMerge>
+              </filter>
+            </defs>
+            <path
+              class="how-pulse-path"
+              pathLength="1"
+              d="M348 22 C 425 4, 525 50, 594 155 S 570 265, 510 325 S 475 360, 448 380"
+              stroke="url(#howPulseGrad)"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              fill="none"
+              opacity="0.95"
+            />
+            <g class="how-pulse-nodes">
+              <g class="how-node how-node--1" filter="url(#howNodeGlow)" opacity="0.5">
+                <circle cx="348" cy="22" r="15" fill="#27C7A5"/>
+              </g>
+              <g class="how-node how-node--2" filter="url(#howNodeGlow)" opacity="0.5">
+                <circle cx="594" cy="155" r="14" fill="#F5B73B"/>
+              </g>
+              <g class="how-node how-node--3" filter="url(#howNodeGlow)" opacity="0.5">
+                <circle cx="448" cy="380" r="15" fill="#FF6846"/>
+              </g>
+              <g class="how-node how-node--1">
+                <circle cx="348" cy="22" r="11" fill="#27C7A5"/>
+                <circle cx="348" cy="22" r="6.4" fill="#FFFFFF"/>
+                <circle cx="348" cy="22" r="2.8" fill="#27C7A5"/>
+              </g>
+              <g class="how-node how-node--2">
+                <circle cx="594" cy="155" r="10.5" fill="#F5B73B"/>
+                <circle cx="594" cy="155" r="6.1" fill="#FFFFFF"/>
+                <circle cx="594" cy="155" r="2.7" fill="#F5B73B"/>
+              </g>
+              <g class="how-node how-node--3">
+                <circle cx="448" cy="380" r="11" fill="#FF6846"/>
+                <circle cx="448" cy="380" r="6.4" fill="#FFFFFF"/>
+                <circle cx="448" cy="380" r="2.8" fill="#FF6846"/>
+              </g>
+            </g>
+          </svg>
+
+          <div class="how-float how-float--doc">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M7 2.5h7.2L19.5 8v13.5H7V2.5z" fill="#27C7A5"/>
+              <path d="M14.2 2.5V8H19.5" fill="#1aa889"/>
+              <path d="M10 12h6M10 15.5h4.5" stroke="#fff" stroke-width="1.7" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="how-float how-float--cal">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <rect x="3.2" y="5" width="17.6" height="15.2" rx="2.4" fill="#F5B73B"/>
+              <path d="M3.2 10h17.6" stroke="#fff" stroke-width="1.6"/>
+              <path d="M8 3.2v4.2M16 3.2v4.2" stroke="#F5B73B" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="8.2" cy="14.2" r="1.35" fill="#fff"/>
+              <circle cx="12" cy="14.2" r="1.35" fill="#fff"/>
+              <circle cx="15.8" cy="14.2" r="1.35" fill="#fff"/>
+              <circle cx="8.2" cy="17.4" r="1.35" fill="#fff" opacity="0.75"/>
+              <circle cx="12" cy="17.4" r="1.35" fill="#fff"/>
+            </svg>
+          </div>
+          <div class="how-float how-float--tg">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21.5 3.2L3.8 10.6c-.9.35-.88 1.62.05 1.9l4.5 1.35 1.7 5.15c.28.86 1.45 1.02 1.95.26l2.55-3.9 4.7 3.45c.72.53 1.75.14 1.95-.74L22.7 4.4c.22-.95-.7-1.72-1.2-1.2z" fill="#FF6846"/>
+            </svg>
+          </div>
+
+          <span class="how-ball how-ball--lg how-ball--mint"></span>
+          <span class="how-ball how-ball--md how-ball--sun"></span>
+          <span class="how-ball how-ball--sm how-ball--coral"></span>
+          <span class="how-ball how-ball--xs how-ball--mint"></span>
+          <span class="how-ball how-ball--sm how-ball--coral how-ball--left"></span>
+          <span class="how-ball how-ball--xs how-ball--sun how-ball--far"></span>
+          <span class="how-dot how-dot--a"></span>
+          <span class="how-dot how-dot--b"></span>
+          <span class="how-dot how-dot--c"></span>
+          <span class="how-dot how-dot--d"></span>
+          <span class="how-dot how-dot--e"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--inside" id="inside">
+      <div class="inside-layout">
+        <div class="inside-copy">
+          <header class="inside-head" data-reveal>
+            <p class="eyebrow">Формат</p>
+            <h2>Что внутри разбора</h2>
+            <p class="section-lead">Не общие советы, а ясный следующий шаг.</p>
+          </header>
+
+          <ul class="inside-list">
+            <li data-reveal>
+              <span class="inside-icon inside-icon--mint" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.2" stroke="currentColor" stroke-width="1.7"/><path d="M16 16l4.2 4.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </span>
+              <div class="inside-item-body">
+                <h3>
+                  <span class="inside-check inside-check--mint" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" fill="none"><path d="M3.5 8.2l2.8 2.8 6.2-6.2" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Анализ вашей ситуации
+                </h3>
+                <p>Разбираем задачу, контекст, ресурсы и находим ключевые точки.</p>
+              </div>
+            </li>
+            <li data-reveal>
+              <span class="inside-icon inside-icon--sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M7 3.5h7l5 5V20.5H7V3.5z" stroke="currentColor" stroke-width="1.7"/><path d="M14 3.5V8.5h5M10 12h6M10 15.5h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </span>
+              <div class="inside-item-body">
+                <h3>
+                  <span class="inside-check inside-check--sun" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" fill="none"><path d="M3.5 8.2l2.8 2.8 6.2-6.2" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Рекомендации и варианты
+                </h3>
+                <p>Даём понятные решения, объясняем плюсы и минусы, показываем примеры.</p>
+              </div>
+            </li>
+            <li data-reveal>
+              <span class="inside-icon inside-icon--coral" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="7.2" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="2.8" stroke="currentColor" stroke-width="1.7"/><path d="M12 2.8v2.2M12 19v2.2M2.8 12h2.2M19 12h2.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </span>
+              <div class="inside-item-body">
+                <h3>
+                  <span class="inside-check inside-check--coral" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" fill="none"><path d="M3.5 8.2l2.8 2.8 6.2-6.2" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Чёткий план действий
+                </h3>
+                <p>Вы получаете конкретный план под вашу задачу на 7–14 дней.</p>
+              </div>
+            </li>
+            <li data-reveal>
+              <span class="inside-icon inside-icon--mint" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M12 8.4a3.6 3.6 0 100 7.2 3.6 3.6 0 000-7.2z" stroke="currentColor" stroke-width="1.7"/><path d="M12 3.2v2M12 18.8v2M3.2 12h2M18.8 12h2M5.7 5.7l1.45 1.45M16.85 16.85l1.45 1.45M16.85 7.15l1.45-1.45M5.7 18.3l1.45-1.45" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </span>
+              <div class="inside-item-body">
+                <h3>
+                  <span class="inside-check inside-check--mint" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" fill="none"><path d="M3.5 8.2l2.8 2.8 6.2-6.2" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                  Дополнительные материалы
+                </h3>
+                <p>Шаблоны, ссылки на инструменты и полезные ресурсы.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="inside-visual">
+          <aside class="result-card" data-reveal>
+            <div class="result-copy">
+              <p class="result-label">Результат</p>
+              <p class="result-text">Вы уходите не с «вдохновением», а с <em class="result-em">понятным планом</em> и точкой входа в работу.</p>
+            </div>
+            <div class="result-visual" aria-hidden="true">
+              <span class="result-target">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="7.2" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="2.8" stroke="currentColor" stroke-width="1.7"/></svg>
+              </span>
+              <span class="result-divider"></span>
+              <div class="result-chart">
+                <span class="result-bar result-bar--1"></span>
+                <span class="result-bar result-bar--2"></span>
+                <span class="result-bar result-bar--3"></span>
+              </div>
+            </div>
+          </aside>
+
+          <div class="inside-stage" aria-hidden="true" data-reveal>
+            <span class="inside-stage-grid"></span>
+            <span class="inside-stage-orb inside-stage-orb--mint"></span>
+            <span class="inside-stage-orb inside-stage-orb--peach"></span>
+            <span class="inside-stage-ring"></span>
+
+            <svg class="inside-pulse-line" viewBox="0 0 420 340" fill="none" preserveAspectRatio="xMidYMid meet">
+              <defs>
+                <linearGradient id="insidePulseGrad" x1="60" y1="40" x2="360" y2="300" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#27C7A5"/>
+                  <stop offset="0.5" stop-color="#F5B73B"/>
+                  <stop offset="1" stop-color="#FF6846"/>
+                </linearGradient>
+                <filter id="insideNodeGlow" x="-120%" y="-120%" width="340%" height="340%">
+                  <feGaussianBlur stdDeviation="3.5" result="b"/>
+                  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+              <path class="inside-pulse-path" pathLength="1" d="M70 60 C 140 20, 250 35, 320 95 C 370 140, 380 210, 340 265 C 300 315, 200 330, 120 290" stroke="url(#insidePulseGrad)" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+              <g filter="url(#insideNodeGlow)">
+                <circle class="inside-node inside-node--1" cx="70" cy="60" r="7" fill="#27C7A5"/>
+                <circle class="inside-node inside-node--2" cx="320" cy="95" r="6.5" fill="#F5B73B"/>
+                <circle class="inside-node inside-node--3" cx="340" cy="265" r="7" fill="#FF6846"/>
+                <circle class="inside-node inside-node--4" cx="120" cy="290" r="6" fill="#27C7A5"/>
+              </g>
+            </svg>
+
+            <div class="inside-checklist">
+              <span class="inside-checklist-row"><i class="inside-cl-check inside-cl-check--mint"></i><i class="inside-cl-bar"></i></span>
+              <span class="inside-checklist-row"><i class="inside-cl-check inside-cl-check--sun"></i><i class="inside-cl-bar inside-cl-bar--mid"></i></span>
+              <span class="inside-checklist-row"><i class="inside-cl-check inside-cl-check--coral"></i><i class="inside-cl-bar inside-cl-bar--short"></i></span>
+            </div>
+
+            <div class="inside-float inside-float--chart">
+              <span class="inside-mini-bars"><i></i><i></i><i></i></span>
+            </div>
+            <div class="inside-float inside-float--bulb">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 21h4M12 3a5 5 0 015 5c0 2-1 3.5-2.5 4.5S12 15 12 15s-1-.5-2.5-2.5S7 10 7 8a5 5 0 015-5z" stroke="#E09B2D" stroke-width="1.7" stroke-linecap="round"/></svg>
+            </div>
+            <div class="inside-float inside-float--pie">
+              <svg viewBox="0 0 40 40" fill="none">
+                <circle cx="20" cy="20" r="12" stroke="rgba(39,199,165,0.25)" stroke-width="5"/>
+                <circle cx="20" cy="20" r="12" stroke="#27C7A5" stroke-width="5" stroke-dasharray="50 76" stroke-linecap="round" transform="rotate(-90 20 20)"/>
+              </svg>
+            </div>
+            <div class="inside-float inside-float--cal">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="5" width="17" height="15" rx="2.2" stroke="#FF6846" stroke-width="1.7"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="#FF6846" stroke-width="1.7" stroke-linecap="round"/><circle cx="9" cy="14.5" r="1.1" fill="#FF6846"/><circle cx="12.5" cy="14.5" r="1.1" fill="#FF6846"/><circle cx="16" cy="14.5" r="1.1" fill="#FF6846"/></svg>
+            </div>
+
+            <span class="inside-dot inside-dot--a"></span>
+            <span class="inside-dot inside-dot--b"></span>
+            <span class="inside-dot inside-dot--c"></span>
+            <span class="inside-dot inside-dot--d"></span>
+
+            <span class="inside-plant inside-plant--left"></span>
+            <span class="inside-plant inside-plant--right"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--situations" id="situations">
+      <header class="sit-head" data-reveal>
+        <p class="eyebrow">Ситуации</p>
+        <h2>С чем можно прийти на разбор</h2>
+        <p class="section-lead">Любая точка, где нужна ясность, структура и следующий шаг.</p>
+      </header>
+
+      <div class="sit-board">
+        <span class="sit-board-grid" aria-hidden="true"></span>
+        <span class="sit-board-orb sit-board-orb--mint" aria-hidden="true"></span>
+        <span class="sit-board-orb sit-board-orb--peach" aria-hidden="true"></span>
+
+        <div class="sit-cards">
+          <article class="sit-card sit-card--mint" data-reveal>
+            <span class="sit-icon sit-icon--mint" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 18h6M10 21h4M12 3a5 5 0 015 5c0 2-1 3.5-2.5 4.5S12 15 12 15s-1-.5-2.5-2.5S7 10 7 8a5 5 0 015-5z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Есть идея, но непонятно, с чего начать</h3>
+            <p>Разложим её на конкретные шаги.</p>
+          </article>
+
+          <article class="sit-card sit-card--sun" data-reveal>
+            <span class="sit-icon sit-icon--sun" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M7 3h7l5 5v13H7V3z" stroke="currentColor" stroke-width="1.7"/><path d="M14 3v5h5M10 12h6M10 16h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Есть услуга, но сложно её упаковать</h3>
+            <p>Сформулируем оффер и структуру, чтобы он был понятен и привлекателен.</p>
+          </article>
+
+          <article class="sit-card sit-card--coral" data-reveal>
+            <span class="sit-icon sit-icon--coral" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5M4 19h16M8 14v5M12 10v9M16 7v12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Есть проект, который «застрял»</h3>
+            <p>Найдём узкое место и определим следующий шаг.</p>
+          </article>
+
+          <article class="sit-card sit-card--mint" data-reveal>
+            <span class="sit-icon sit-icon--mint" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 3h6v8a5 5 0 11-6 0V3zM8 21h8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Нужно быстро проверить гипотезу</h3>
+            <p>Определим, что стоит тестировать первым и как это сделать просто.</p>
+          </article>
+        </div>
+
+        <div class="sit-finale" data-reveal>
+          <div class="sit-finale-mark" aria-hidden="true">
+            <span class="sit-finale-ring sit-finale-ring--a"></span>
+            <span class="sit-finale-ring sit-finale-ring--b"></span>
+            <span class="sit-finale-ring sit-finale-ring--c"></span>
+            <span class="sit-finale-core">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+          <aside class="sit-finale-card">
+            <p class="sit-finale-label">Разбор</p>
+            <p class="sit-finale-text">Ясный план и уверенный следующий шаг</p>
+          </aside>
+        </div>
+
+        <svg class="sit-route" viewBox="0 0 1000 130" fill="none" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="sitRouteGrad" x1="20" y1="70" x2="960" y2="40" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#27C7A5"/>
+              <stop offset="0.32" stop-color="#F5B73B"/>
+              <stop offset="0.62" stop-color="#FF8A4C"/>
+              <stop offset="1" stop-color="#FF6846"/>
+            </linearGradient>
+            <filter id="sitNodeGlow" x="-140%" y="-140%" width="380%" height="380%">
+              <feGaussianBlur stdDeviation="3.2" result="b"/>
+              <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <!-- Soft sine wave under cards → up to finale -->
+          <path
+            class="sit-route-path"
+            pathLength="1"
+            d="M16 68
+               C 60 68, 60 100, 110 100
+               C 160 100, 160 42, 210 42
+               C 260 42, 260 100, 310 100
+               C 360 100, 360 42, 410 42
+               C 460 42, 460 100, 510 100
+               C 560 100, 560 42, 610 42
+               C 660 42, 660 100, 715 100
+               C 780 100, 840 55, 900 38
+               C 935 28, 960 32, 985 42"
+            stroke="url(#sitRouteGrad)"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            fill="none"
+          />
+          <g filter="url(#sitNodeGlow)">
+            <g class="sit-node sit-node--1"><circle cx="110" cy="100" r="11" fill="#27C7A5"/><circle cx="110" cy="100" r="5" fill="#fff"/></g>
+            <g class="sit-node sit-node--2"><circle cx="310" cy="100" r="11" fill="#F5B73B"/><circle cx="310" cy="100" r="5" fill="#fff"/></g>
+            <g class="sit-node sit-node--3"><circle cx="510" cy="100" r="11" fill="#FF8A4C"/><circle cx="510" cy="100" r="5" fill="#fff"/></g>
+            <g class="sit-node sit-node--4"><circle cx="715" cy="100" r="11" fill="#FF6846"/><circle cx="715" cy="100" r="5" fill="#fff"/></g>
+          </g>
+        </svg>
+
+        <!-- Mobile vertical Pulse route -->
+        <svg class="sit-route-mobile" viewBox="0 0 48 1000" fill="none" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="sitRouteGradMob" x1="24" y1="20" x2="24" y2="980" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#27C7A5"/>
+              <stop offset="0.28" stop-color="#F5B73B"/>
+              <stop offset="0.55" stop-color="#FF8A4C"/>
+              <stop offset="1" stop-color="#FF6846"/>
+            </linearGradient>
+          </defs>
+          <path
+            class="sit-route-path"
+            pathLength="1"
+            d="M24 36
+               C 24 70, 10 100, 24 140
+               C 38 180, 24 220, 24 270
+               C 24 320, 10 360, 24 410
+               C 38 460, 24 500, 24 550
+               C 24 600, 10 650, 24 700
+               C 38 750, 24 800, 24 850
+               C 24 900, 18 940, 24 980"
+            stroke="url(#sitRouteGradMob)"
+            stroke-width="3.2"
+            stroke-linecap="round"
+            fill="none"
+          />
+          <g>
+            <g class="sit-node sit-node--1"><circle cx="24" cy="140" r="9" fill="#27C7A5"/><circle cx="24" cy="140" r="4" fill="#fff"/></g>
+            <g class="sit-node sit-node--2"><circle cx="24" cy="320" r="9" fill="#F5B73B"/><circle cx="24" cy="320" r="4" fill="#fff"/></g>
+            <g class="sit-node sit-node--3"><circle cx="24" cy="500" r="9" fill="#FF8A4C"/><circle cx="24" cy="500" r="4" fill="#fff"/></g>
+            <g class="sit-node sit-node--4"><circle cx="24" cy="680" r="9" fill="#27C7A5"/><circle cx="24" cy="680" r="4" fill="#fff"/></g>
+            <g class="sit-node sit-node--5"><circle cx="24" cy="960" r="10" fill="#FF6846"/><circle cx="24" cy="960" r="4.5" fill="#fff"/></g>
+          </g>
+        </svg>
+
+        <span class="sit-dot sit-dot--a" aria-hidden="true"></span>
+        <span class="sit-dot sit-dot--b" aria-hidden="true"></span>
+        <span class="sit-dot sit-dot--c" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <section class="book" id="book">
+      <div class="book-inner" data-reveal>
+        <p class="eyebrow">Запись</p>
+        <h2>Готовы к разбору?</h2>
+        <p class="book-lead">Напишите в Telegram — выберем удобное время<br>и ответим на ваши вопросы.</p>
+        <a class="btn btn-primary btn-lg book-cta" href="https://t.me/NadezdaBoriskina" target="_blank" rel="noopener">
+          <svg class="btn-icon book-cta-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M22 2L15 22l-4-9-9-4 20-7z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          </svg>
+          Записаться в Telegram
+        </a>
+        <p class="book-note">
+          <a href="mailto:bonad6363@gmail.com">Или на почту: bonad6363@gmail.com</a>
+        </p>
+      </div>
+      <div class="book-visual" aria-hidden="true" data-reveal>
+        <span class="book-glow book-glow--mint"></span>
+        <span class="book-glow book-glow--peach"></span>
+        <svg class="book-arcs" viewBox="0 0 280 280" fill="none" aria-hidden="true">
+          <path d="M48 195 A 105 105 0 0 1 215 58" stroke="rgba(255,104,70,0.22)" stroke-width="1.25" stroke-linecap="round" fill="none"/>
+          <path d="M32 210 A 130 130 0 0 1 235 42" stroke="rgba(255,138,76,0.14)" stroke-width="1.05" stroke-linecap="round" fill="none"/>
+        </svg>
+        <div class="book-checklist">
+          <span class="book-cl-row"><i class="book-cl-check book-cl-check--mint"></i><i class="book-cl-bar"></i></span>
+          <span class="book-cl-row"><i class="book-cl-check book-cl-check--sun"></i><i class="book-cl-bar book-cl-bar--mid"></i></span>
+          <span class="book-cl-row"><i class="book-cl-check book-cl-check--coral"></i><i class="book-cl-bar book-cl-bar--short"></i></span>
+        </div>
+        <div class="book-plane">
+          <svg viewBox="0 0 96 96" fill="none">
+            <path d="M12 46L84 18L52 82L42 52L12 46z" fill="#fff" stroke="#FF6846" stroke-width="2.6" stroke-linejoin="round"/>
+            <path d="M42 52L68 30" stroke="#FF8A4C" stroke-width="2.6" stroke-linecap="round"/>
+            <path d="M52 82L42 52L68 30" fill="#FF8A4C" opacity="0.28"/>
+          </svg>
+        </div>
+        <span class="book-plant"></span>
+        <span class="book-dot book-dot--a"></span>
+        <span class="book-dot book-dot--b"></span>
+        <span class="book-dot book-dot--c"></span>
+        <span class="book-dot book-dot--d"></span>
+      </div>
+      <svg class="book-flight" viewBox="0 0 900 360" fill="none" preserveAspectRatio="none" aria-hidden="true">
+        <path
+          class="book-flight-dash"
+          d="M338 238
+             C 405 205, 470 128, 545 92
+             C 585 70, 625 38, 690 28
+             C 755 18, 815 32, 855 68"
+          stroke="rgba(255,104,70,0.62)"
+          stroke-width="2.4"
+          stroke-dasharray="4 7"
+          stroke-linecap="round"
+          fill="none"
+        />
+      </svg>
+      <svg class="book-flight book-flight--mobile" viewBox="0 0 700 320" fill="none" preserveAspectRatio="none" aria-hidden="true">
+        <path
+          class="book-flight-dash"
+          d="M72 208
+             C 160 185, 240 105, 340 78
+             C 410 58, 480 70, 545 112
+             C 585 138, 615 162, 645 185"
+          stroke="rgba(255,104,70,0.58)"
+          stroke-width="2.2"
+          stroke-dasharray="4 7"
+          stroke-linecap="round"
+          fill="none"
+        />
+      </svg>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#top">Pulse</a>
+    <a class="footer-back" href="../index.html">← К портфолио NAD</a>
+    <p class="copy">Pulse · экспертный разбор · демо-кейс</p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
